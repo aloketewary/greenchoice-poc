@@ -1,0 +1,898 @@
+.digit {
+    -moz-transition: -moz-transform 0.3s ease;
+    -o-transition: -o-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    line-height: 1em;
+    position: relative;
+}
+
+[data-number="0"].digit {
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+    -moz-transform: translate(0, -10em);
+    -ms-transform: translate(0, -10em);
+    -webkit-transform: translate(0, -10em);
+    transform: translate(0, -10em);
+}
+
+[data-number="1"].digit {
+    -moz-transform: translate(0, -9em);
+    -ms-transform: translate(0, -9em);
+    -webkit-transform: translate(0, -9em);
+    transform: translate(0, -9em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="2"].digit {
+    -moz-transform: translate(0, -8em);
+    -ms-transform: translate(0, -8em);
+    -webkit-transform: translate(0, -8em);
+    transform: translate(0, -8em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="3"].digit {
+    -moz-transform: translate(0, -7em);
+    -ms-transform: translate(0, -7em);
+    -webkit-transform: translate(0, -7em);
+    transform: translate(0, -7em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="4"].digit {
+    -moz-transform: translate(0, -6em);
+    -ms-transform: translate(0, -6em);
+    -webkit-transform: translate(0, -6em);
+    transform: translate(0, -6em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="5"].digit {
+    -moz-transform: translate(0, -5em);
+    -ms-transform: translate(0, -5em);
+    -webkit-transform: translate(0, -5em);
+    transform: translate(0, -5em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="6"].digit {
+    -moz-transform: translate(0, -4em);
+    -ms-transform: translate(0, -4em);
+    -webkit-transform: translate(0, -4em);
+    transform: translate(0, -4em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="7"].digit {
+    -moz-transform: translate(0, -3em);
+    -ms-transform: translate(0, -3em);
+    -webkit-transform: translate(0, -3em);
+    transform: translate(0, -3em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="8"].digit {
+    -moz-transform: translate(0, -2em);
+    -ms-transform: translate(0, -2em);
+    -webkit-transform: translate(0, -2em);
+    transform: translate(0, -2em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+[data-number="9"].digit {
+    -moz-transform: translate(0, -1em);
+    -ms-transform: translate(0, -1em);
+    -webkit-transform: translate(0, -1em);
+    transform: translate(0, -1em);
+    color: #a5cd39;
+    font-weight: 800;
+    background: #fff;
+}
+
+.digit-container {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0px 0.2em;
+    width: 1.5em;
+    height: 1em;
+    font-size: 32px;
+    background-color: #a5cd39;
+}
+
+.tippy-touch {
+    cursor: pointer !important
+}
+
+.tippy-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.tippy-popper {
+    max-width: 350px;
+    -webkit-perspective: 700px;
+    perspective: 700px;
+    z-index: 9999;
+    outline: 0;
+    -webkit-transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+    pointer-events: none
+}
+
+.tippy-popper[data-html] {
+    max-width: 96%;
+    max-width: calc(100% - 20px)
+}
+
+.tippy-popper[x-placement^=top] .tippy-backdrop {
+    border-radius: 40% 40% 0 0
+}
+
+.tippy-popper[x-placement^=top] .tippy-roundarrow {
+    bottom: -8px;
+    margin: 0 6px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+
+.tippy-popper[x-placement^=top] .tippy-roundarrow svg {
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.tippy-popper[x-placement^=top] .tippy-arrow {
+    border-top: 7px solid #333;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    bottom: -7px;
+    margin: 0 7px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+
+.tippy-popper[x-placement^=top] .tippy-backdrop {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%
+}
+
+.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible] {
+    -webkit-transform: scale(5.5) translate(-50%, 25%);
+    transform: scale(5.5) translate(-50%, 25%);
+    opacity: 1
+}
+
+.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden] {
+    -webkit-transform: scale(1) translate(-50%, 25%);
+    transform: scale(1) translate(-50%, 25%);
+    opacity: 0
+}
+
+.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=perspective] {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom
+}
+
+.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(-10px) rotateX(0);
+    transform: translateY(-10px) rotateX(0)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotateX(90deg);
+    transform: translateY(0) rotateX(90deg)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(-10px) scale(1);
+    transform: translateY(-10px) scale(1)
+}
+
+.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0) scale(0);
+    transform: translateY(0) scale(0)
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-backdrop {
+    border-radius: 0 0 30% 30%
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-roundarrow {
+    top: -8px;
+    margin: 0 6px;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg {
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-arrow {
+    border-bottom: 7px solid #333;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    top: -7px;
+    margin: 0 7px;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-backdrop {
+    -webkit-transform-origin: 0 -100%;
+    transform-origin: 0 -100%
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible] {
+    -webkit-transform: scale(5.5) translate(-50%, -125%);
+    transform: scale(5.5) translate(-50%, -125%);
+    opacity: 1
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden] {
+    -webkit-transform: scale(1) translate(-50%, -125%);
+    transform: scale(1) translate(-50%, -125%);
+    opacity: 0
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=perspective] {
+    -webkit-transform-origin: top;
+    transform-origin: top
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(10px) rotateX(0);
+    transform: translateY(10px) rotateX(0)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotateX(-90deg);
+    transform: translateY(0) rotateX(-90deg)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateY(10px) scale(1);
+    transform: translateY(10px) scale(1)
+}
+
+.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateY(0) scale(0);
+    transform: translateY(0) scale(0)
+}
+
+.tippy-popper[x-placement^=left] .tippy-backdrop {
+    border-radius: 30% 0 0 30%
+}
+
+.tippy-popper[x-placement^=left] .tippy-roundarrow {
+    right: -16px;
+    margin: 4px 0;
+    -webkit-transform-origin: 33.33333333% 50%;
+    transform-origin: 33.33333333% 50%
+}
+
+.tippy-popper[x-placement^=left] .tippy-roundarrow svg {
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.tippy-popper[x-placement^=left] .tippy-arrow {
+    border-left: 7px solid #333;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    right: -7px;
+    margin: 4px 0;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%
+}
+
+.tippy-popper[x-placement^=left] .tippy-backdrop {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0
+}
+
+.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible] {
+    -webkit-transform: scale(5.5) translate(33%, -50%);
+    transform: scale(5.5) translate(33%, -50%);
+    opacity: 1
+}
+
+.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden] {
+    -webkit-transform: scale(1.5) translate(33%, -50%);
+    transform: scale(1.5) translate(33%, -50%);
+    opacity: 0
+}
+
+.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=perspective] {
+    -webkit-transform-origin: right;
+    transform-origin: right
+}
+
+.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(-10px) rotateY(0);
+    transform: translateX(-10px) rotateY(0)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0) rotateY(-90deg);
+    transform: translateX(0) rotateY(-90deg)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(-10px) scale(1);
+    transform: translateX(-10px) scale(1)
+}
+
+.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0)
+}
+
+.tippy-popper[x-placement^=right] .tippy-backdrop {
+    border-radius: 0 30% 30% 0
+}
+
+.tippy-popper[x-placement^=right] .tippy-roundarrow {
+    left: -16px;
+    margin: 4px 0;
+    -webkit-transform-origin: 66.66666666% 50%;
+    transform-origin: 66.66666666% 50%
+}
+
+.tippy-popper[x-placement^=right] .tippy-roundarrow svg {
+    position: absolute;
+    left: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.tippy-popper[x-placement^=right] .tippy-arrow {
+    border-right: 7px solid #333;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    left: -7px;
+    margin: 4px 0;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+
+.tippy-popper[x-placement^=right] .tippy-backdrop {
+    -webkit-transform-origin: -100% 0;
+    transform-origin: -100% 0
+}
+
+.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible] {
+    -webkit-transform: scale(5.5) translate(-133%, -50%);
+    transform: scale(5.5) translate(-133%, -50%);
+    opacity: 1
+}
+
+.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden] {
+    -webkit-transform: scale(1.5) translate(-133%, -50%);
+    transform: scale(1.5) translate(-133%, -50%);
+    opacity: 0
+}
+
+.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=perspective] {
+    -webkit-transform-origin: left;
+    transform-origin: left
+}
+
+.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(10px) rotateY(0);
+    transform: translateX(10px) rotateY(0)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0) rotateY(90deg);
+    transform: translateX(0) rotateY(90deg)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible] {
+    opacity: 1;
+    -webkit-transform: translateX(10px) scale(1);
+    transform: translateX(10px) scale(1)
+}
+
+.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden] {
+    opacity: 0;
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0)
+}
+
+.tippy-tooltip {
+    position: relative;
+    color: #fff;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: .3rem .6rem;
+    text-align: center;
+    will-change: transform;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #333
+}
+
+.tippy-tooltip[data-size=small] {
+    padding: .2rem .4rem;
+    font-size: .75rem
+}
+
+.tippy-tooltip[data-size=large] {
+    padding: .4rem .8rem;
+    font-size: 1rem
+}
+
+.tippy-tooltip[data-animatefill] {
+    overflow: hidden;
+    background-color: transparent
+}
+
+.tippy-tooltip[data-animatefill] .tippy-content {
+    -webkit-transition: -webkit-clip-path cubic-bezier(.46, .1, .52, .98);
+    transition: -webkit-clip-path cubic-bezier(.46, .1, .52, .98);
+    transition: clip-path cubic-bezier(.46, .1, .52, .98);
+    transition: clip-path cubic-bezier(.46, .1, .52, .98), -webkit-clip-path cubic-bezier(.46, .1, .52, .98)
+}
+
+.tippy-tooltip[data-interactive] {
+    pointer-events: auto
+}
+
+.tippy-tooltip[data-inertia][data-state=visible] {
+    -webkit-transition-timing-function: cubic-bezier(.53, 2, .36, .85);
+    transition-timing-function: cubic-bezier(.53, 2, .36, .85)
+}
+
+.tippy-tooltip[data-inertia][data-state=hidden] {
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease
+}
+
+.tippy-arrow,
+.tippy-roundarrow {
+    position: absolute;
+    width: 0;
+    height: 0
+}
+
+.tippy-roundarrow {
+    width: 24px;
+    height: 8px;
+    fill: #333;
+    pointer-events: none
+}
+
+.tippy-roundarrow path {
+    pointer-events: auto
+}
+
+.tippy-backdrop {
+    position: absolute;
+    will-change: transform;
+    background-color: #333;
+    border-radius: 50%;
+    width: 26%;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    -webkit-transition: all cubic-bezier(.46, .1, .52, .98);
+    transition: all cubic-bezier(.46, .1, .52, .98);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.tippy-backdrop:after {
+    content: "";
+    float: left;
+    padding-top: 100%
+}
+
+body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content {
+    -webkit-clip-path: ellipse(100% 100% at 50% 50%);
+    clip-path: ellipse(100% 100% at 50% 50%)
+}
+
+body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content {
+    -webkit-clip-path: ellipse(5% 50% at 50% 50%);
+    clip-path: ellipse(5% 50% at 50% 50%)
+}
+
+body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content {
+    -webkit-clip-path: ellipse(135% 100% at 0 50%);
+    clip-path: ellipse(135% 100% at 0 50%)
+}
+
+body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content {
+    -webkit-clip-path: ellipse(25% 100% at 0 50%);
+    clip-path: ellipse(25% 100% at 0 50%)
+}
+
+body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content {
+    -webkit-clip-path: ellipse(135% 100% at 100% 50%);
+    clip-path: ellipse(135% 100% at 100% 50%)
+}
+
+body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content {
+    -webkit-clip-path: ellipse(25% 100% at 100% 50%);
+    clip-path: ellipse(25% 100% at 100% 50%)
+}
+
+@media (max-width:360px) {
+    .tippy-popper {
+        max-width: 96%;
+        max-width: calc(100% - 20px)
+    }
+}
+
+.w-gallons {
+    text-align: center;
+}
+
+.l-gallons {
+    font-size: 50px;
+    line-height: 1.2;
+    padding: 20px;
+    margin: 0;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    font-family: monospace;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.h-gallons {
+    border-radius: 0.34em;
+    font-family: "Arimo", monospace;
+    padding: 0.15em;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.gallons.odometer.odometer-theme-car {
+    position: absolute;
+    top: 0.15em;
+    bottom: 0.15em;
+    right: 0.15em;
+    overflow: hidden;
+}
+
+.odometer-digitbox {
+    background-image: linear-gradient(to bottom, #333333 0%, #333333 40%, #101010 60%, #333333 80%, #333333 100%);
+    padding: 0 0.15em;
+    font-style: normal;
+    box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.8);
+}
+
+.odometer-digitbox:first-child {
+    border-radius: 0.2em 0 0 0.2em;
+    margin-left: 0;
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-car {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-car .odometer-digit {
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-car .odometer-digit .odometer-digit-spacer {
+    display: inline-block;
+    vertical-align: top;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.odometer.odometer-theme-car .odometer-digit .odometer-ribbon {
+    display: block;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.odometer.odometer-theme-car .odometer-digit .odometer-ribbon-inner {
+    display: block;
+    -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.odometer.odometer-theme-car .odometer-digit .odometer-value {
+    display: block;
+    -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
+.odometer.odometer-theme-car .odometer-digit .odometer-value.odometer-last-value {
+    position: absolute;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-down .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-car {
+    font-family: "Arimo", monospace;
+    background: #000;
+    color: #fff;
+}
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-car .odometer-digit {
+    box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.8);
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #333333 0%, #333333 40%, #101010 60%, #333333 80%, #333333 100%);
+    padding: 0 0.15em;
+}
+
+.odometer.odometer-auto-theme .odometer-digit:first-child,
+.odometer.odometer-theme-car .odometer-digit:first-child {
+    border-radius: 0.2em 0 0 0.2em;
+}
+
+.odometer.odometer-auto-theme .odometer-digit:last-child,
+.odometer.odometer-theme-car .odometer-digit:last-child {
+    border-radius: 0 0.2em 0.2em 0;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #fff 0%, #ccc 40%, #ccc 60%, #fff 80%, #fff 100%);
+    color: #000;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
+    left: 0.15em;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-car.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    transition-timing-function: linear;
+}

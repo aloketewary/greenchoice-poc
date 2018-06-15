@@ -1,0 +1,145 @@
+{
+  "HEADER_SERVICE_URL": "http://localhost:8082",
+  "BODY_SERVICE_URL": "http://localhost:8083",
+  "MENUS": [
+    {
+      "id": 0,
+      "liClass": "home",
+      "link": "/",
+      "icon": "icon-home",
+      "title": "Home",
+      "dispName": "Home",
+      "subMenus": []
+    },
+    {
+      "id": 1,
+      "liClass": "subnav",
+      "link": "https: //www.greenchoice.nl/besparen/",
+      "icon": "",
+      "title": "Save",
+      "dispName": "Save",
+      "subMenus": [
+        {
+          "id": 0,
+          "link": "https: //www.greenchoice.nl/besparen/warmtepomp/",
+          "title": "Heat pump",
+          "dispName": "Heat pump"
+        },
+        {
+          "id": 1,
+          "link": "https: //www.greenchoice.nl/besparen/boks/",
+          "title": "BOKS",
+          "dispName": "BOKS"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "liClass": "subnav",
+      "link": "https: //www.greenchoice.nl/zelf-opwekken/",
+      "icon": "",
+      "title": "Generate yourself",
+      "dispName": "Generate yourself",
+      "subMenus": [
+        {
+          "id": 0,
+          "link": "https: //www.greenchoice.nl/zelf-opwekken/wind/",
+          "title": "Own wind energy",
+          "dispName": "Own wind energy"
+        },
+        {
+          "id": 1,
+          "link": "https: //www.greenchoice.nl/zelf-opwekken/zon/",
+          "title": "Own solar energy",
+          "dispName": "Own solar energy"
+        },
+        {
+          "id": 2,
+          "link": "https: //www.greenchoice.nl/zelf-opwekken/cooperaties/",
+          "title": "Energy cooperatives",
+          "dispName": "Energy cooperatives"
+        },
+        {
+          "id": 3,
+          "link": "https: //www.greenchoice.nl/zelf-opwekken/wek-op-advies/",
+          "title": "Wake up on advice",
+          "dispName": "Wake up on advice"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "liClass": "subnav",
+      "link": "https: //www.greenchoice.nl/groene-energie/",
+      "icon": "",
+      "title": "Green energy",
+      "dispName": "Green energy",
+      "subMenus": [
+        {
+          "id": 0,
+          "link": "https: //www.greenchoice.nl/groene-energie/energiebron-kiezen/",
+          "title": "Choose energy source",
+          "dispName": "Choose energy source"
+        },
+        {
+          "id": 1,
+          "link": "https: //www.greenchoice.nl/groene-energie/energie-vergelijken/",
+          "title": "Compare energy",
+          "dispName": "Compare energy"
+        },
+        {
+          "id": 2,
+          "link": "https: //www.greenchoice.nl/groene-energie/stroom/",
+          "title": "Green power",
+          "dispName": "Green power"
+        },
+        {
+          "id": 3,
+          "link": "https: //www.greenchoice.nl/groene-energie/gas/",
+          "title": "Green gas",
+          "dispName": "Green gas"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "liClass": "subnav",
+      "link": "https: //www.greenchoice.nl/tarieven/",
+      "icon": "",
+      "title": "Rates &amp; Registration",
+      "dispName": "Rates &amp; Registration",
+      "subMenus": [
+        {
+          "id": 0,
+          "link": "https: //www.greenchoice.nl/tarieven/groenuitnederland/",
+          "title": "Green from the Netherlands",
+          "dispName": "Green from the Netherlands"
+        },
+        {
+          "id": 1,
+          "link": "https: //www.greenchoice.nl/tarieven/winduitnederland/",
+          "title": "Wind from the Netherlands",
+          "dispName": "Wind from the Netherlands"
+        },
+        {
+          "id": 2,
+          "link": "https: //www.greenchoice.nl/tarieven/windvanger/",
+          "title": "Wind from the Netherlands WindVangers",
+          "dispName": "Wind from the Netherlands WindVangers"
+        },
+        {
+          "id": 3,
+          "link": "https: //www.greenchoice.nl/tarieven/wind-uit-nederland-boks-live/",
+          "title": "Wind from the Netherlands BOKS Live",
+          "dispName": "Wind from the Netherlands BOKS Live"
+        },
+        {
+          "id": 4,
+          "link": "https: //www.greenchoice.nl/tarieven/overstapservice/",
+          "title": "Switching service",
+          "dispName": "Switching service"
+        }
+      ]
+    }
+  ]
+}
